@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVA SCRIPT TASKS</title>
-    <script src="script.js" defer></script>
+    <title>Document</title>
+    <style>
+        .colored-box {
+          width: 200px;
+          height: 200px;
+          background-color: rgb(166, 0, 255); 
+        }
+      </style>
 </head>
 <body>
-    <h1>check prime number</h1>
+<div class="colored-box" id="box"></div>
+<button onclick="changeColor('red')">Red</button>
+<button onclick="changeColor('green')">Green</button>
+<button onclick="changeColor('blue')">Blue</button>
+
+<script>
+    function changeColor(color) {
+      document.getElementById('box').style.backgroundColor = color;
+    }
+  </script>
 </body>
+    
+
 </html>
